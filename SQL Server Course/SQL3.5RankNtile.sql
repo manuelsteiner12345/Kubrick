@@ -16,3 +16,5 @@ select
 	,dense_rank () over (partition by [color] order by [listprice] asc) dense_rank--rank() always
 	,ntile(10) over (order by [listprice] asc) ntilee -- split the x rows into y clusters. total number of rows divided by 10
 from production.product
+
+-- we have done aggregattion with group by  and by window functions.

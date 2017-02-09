@@ -50,3 +50,5 @@ select
 	,isnull(nullif(middlename,'B'),'BADNAME') -- turn a NULL into BADNAME. NULL column cannot match with equals, so it has to be replaced with another 
 											-- name if we want to join columns that contain names. Do that if there is null
 from person.person
+
+
